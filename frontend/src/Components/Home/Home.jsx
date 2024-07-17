@@ -57,15 +57,16 @@ const Home = () => {
         posts.map((post)=>(
       <Post 
        key={post._id}
-      postImage ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAxoyQI6_NadGWQSKcFXq8NgWhcms96p0SKw&s "
+      postImage ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAxoyQI6_NadGWQSKcFXq8NgWhcms96p0SKw&s"
         ownerName= {"Amit"}
         caption= {" this is first post"}
         postId={post._id}
         caption={post.caption}
-        postImage={post.image.url}cle
+        postImage={post.image.url}
+        />
         ))
       ): (
-        <Typography variant="h6">No post yet</Typography>
+        <Typography variant="h6"> No post yet</Typography>
       )}
      
     </div>
